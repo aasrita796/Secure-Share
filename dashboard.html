@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureShare - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1>SecureShare</h1>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">My Files</a></li>
+                <li><a href="#">Shared</a></li>
+                <li><a href="#">Recent</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <input type="text" placeholder="Search files" class="search-bar">
+            <h2>My Files</h2>
+            <div id="fileList" class="file-list">
+                <div class="file-item">
+                    <div class="file-info">
+                        <p class="file-name">Project Proposal.pdf</p>
+                        <p class="file-details">2.4 MB • PDF • 2 hours ago</p>
+                    </div>
+                    <button class="share-btn" onclick="generateShareLink('Project Proposal.pdf')">Share</button>
+                </div>
+                <div class="file-item">
+                    <div class="file-info">
+                        <p class="file-name">Financial Report Q1.xlsx</p>
+                        <p class="file-details">1.8 MB • Spreadsheet • 1 day ago</p>
+                    </div>
+                    <button class="share-btn" onclick="generateShareLink('Financial Report Q1.xlsx')">Share</button>
+                </div>
+                <div class="file-item">
+                    <div class="file-info">
+                        <p class="file-name">Meeting Notes.docx</p>
+                        <p class="file-details">542 KB • Document • 3 days ago</p>
+                    </div>
+                    <button class="share-btn" onclick="generateShareLink('Meeting Notes.docx')">Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
